@@ -8,7 +8,8 @@ Go to the Documentation Page https://slnic.iceiy.com/
  
 # Description
 This api was made using php language. You can Use this API in your Projects Using AJAX Calls.
-Note But You may can't use GET or REQUEST Methods for that api link (https://slnic.iceiy.com/api/?nic=) as an ajax call because of i was hosted this API on a free hosting server. however You can download that API php source code on my github profile and you can upload it to your web server. then you can use GET/REQUEST Methods. SORRY ABOUT THAT :)
+
+* Note But You may can't use GET or REQUEST Methods for that api link (https://slnic.iceiy.com/api/?nic=) as an ajax call because of i was hosted this API on a free hosting server. however You can download that API php source code on my github profile and you can upload it to your web server. then you can use GET/REQUEST Methods. SORRY ABOUT THAT :)
 
 # Usage
 First of all i need to tell, This API does not store any data .(Like NIC number)
@@ -22,6 +23,21 @@ Modify old Nic number to New NIC Number.
 This API will be very usefull for you. :-)
 
 # Headers
- Content-Type : application/json
+* Content-Type : application/json
+* Access-Control-Allow-Origin: *(All)
 
- Access-Control-Allow-Origin: *(All)
+# Sample JSON Response
+{\
+  "status":true,\
+  "status_description":"Valid",\
+  "type":"Old",\
+  "nic_details":{\
+     "gender":"Male",\
+     "birthday":{\
+           "format1":"1995-06-06",\
+           "format2":"95-June-6"\
+          }\
+      },\
+  "vote_eligible":"Yes"\
+  "modified_nic":"199515802548"\
+}
